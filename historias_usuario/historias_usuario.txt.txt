@@ -1,0 +1,122 @@
+﻿Análisis inicial
+Épica elegida y justificación.
+Instagram Lite 
+Elegí Instagram Lite porque representa un buen desafío de testing: comprobar si realmente cumple con su promesa de ofrecer las funciones principales de Instagram usando menos datos y funcionando bien en celulares de gama baja o con conexión lenta.                           El objetivo del testing será validar las funciones más importantes y verificar que la app sea rápida, ligera y eficiente al momento de navegar o subir contenido.
+Qué sí se testea: funcionalidades principales de la aplicación, como el inicio de sesión, registro de usuarios y acciones básicas (por ejemplo, dar “like” o seguir perfiles).
+Qué no se testea: aspectos técnicos más avanzados como el rendimiento del sistema, la base de datos, las notificaciones push o la compatibilidad con diferentes versiones de Android.
+ID: HU-01
+Título: Inicio de sesión
+Como usuario registrado
+Quiero poder iniciar sesión en Instagram Lite
+Para acceder a mi perfil y contenido personalizado.
+Criterios de aceptación:
+* Debe permitir ingresar un correo o nombre de usuario y contraseña válidos.
+
+* Si los datos son incorrectos, debe mostrar un mensaje: “Usuario o contraseña inválidos”.
+
+* Si los datos son correctos, redirige al feed principal.
+
+* El botón “Iniciar sesión” debe estar habilitado solo cuando ambos campos estén completos.
+
+
+   * El campo de correo debe validar formato email (contener @)
+
+
+ID: HU-02
+Título: Crear publicación con imagen
+Como usuario logueado
+Quiero poder subir una foto desde mi galería
+Para compartirla en mi perfil.
+Criterios de aceptación:
+   * Debe permitir seleccionar una imagen desde el dispositivo.
+
+   * Permitir agregar un texto opcional (caption).
+
+   * Mostrar una vista previa antes de publicar.
+
+   * Al publicar, la imagen debe aparecer en mi perfil y en el feed.
+
+
+ID: HU-03
+Título: Dar “Me gusta” a una publicación
+Como usuario logueado
+Quiero dar “me gusta” a una publicación
+Para interactuar rápidamente con el contenido.
+Criterios de aceptación:
+      * Al tocar el corazón, el ícono debe cambiar a rojo, instantáneamente.
+
+      * El contador de "Me gusta" debe incrementarse en +1.
+
+      * Si toco nuevamente (unlike), el corazón vuelve a blanco y el contador disminuye en -1.
+      * Si no estoy logueado, debe mostrar mensaje solicitando iniciar sesión.
+
+
+ID: HU-04
+Título: Seguir a un usuario
+Como usuario logueado
+Quiero poder seguir o dejar de seguir a otras cuentas
+Para ver sus publicaciones en mi feed.
+Criterios de aceptación:
+         * El botón debe mostrar “Seguir” o “Siguiendo” según el estado.
+
+         * Al seguir, las publicaciones del usuario deben aparecer en mi feed.
+
+         * Si dejo de seguir, debe eliminarse del listado de seguidos.
+         * El cambio de estado (Seguir/Siguiendo) debe ser inmediato al hacer clic.
+
+
+ID: HU-05
+Título: Comentar una publicación
+Como usuario logueado
+Quiero poder escribir comentarios en publicaciones
+Para interactuar con otros usuarios.
+Criterios de aceptación:
+            * Debe mostrar un campo para escribir el comentario.
+
+            * Debe publicar el comentario al presionar “Enviar”.
+
+            * El comentario debe verse debajo de la publicación, con nombre de usuario y hora.
+
+            * Si el texto está vacío, no debe permitir enviarlo.
+            * El campo debe limpiarse después de enviar exitosamente.
+
+
+ID: HU-06
+Título: Registro de usuario
+Como nuevo usuario
+Quiero poder crear una cuenta en Instagram Lite
+Para acceder a la aplicación y comenzar a explorar sus funcionalidades.
+Criterios de aceptación:
+               * Debe solicitar: correo electrónico, nombre de usuario, contraseña y confirmación de contraseña.
+
+               * El email debe tener formato válido (contener @).
+
+               * El nombre de usuario debe ser único (no estar registrado previamente).
+
+               * La contraseña debe tener mínimo 6 caracteres.
+
+
+                  * Si falta algún campo, debe mostrar mensaje: "Completa todos los campos".
+
+                  * Si el username ya existe, debe mostrar: "Nombre de usuario no disponible".
+                  * Si el email ya existe, debe mostrar: "Este correo ya está registrado".
+                  * Al registrarse exitosamente, debe mostrar mensaje de bienvenida.
+                  * Después del registro, debe redirigir automáticamente al feed principal.
+
+
+ID: HU-07
+Título: Ver feed principal
+Como usuario logueado
+Quiero poder ver el feed principal de Instagram Lite
+Para navegar y revisar las publicaciones de los perfiles que sigo.
+
+
+Criterios de aceptación:
+                     * El feed debe mostrar las publicaciones más recientes de los usuarios seguidos.
+
+                     * Cada publicación debe mostrar correctamente imagen/video, nombre de usuario y descripción.
+
+                     * Debe poder desplazarse verticalmente para ver más contenido.
+
+                     * Las interacciones (like, comentar, guardar) deben estar disponibles en cada publicación.
+                     * Si no sigo a nadie, debe mostrar mensaje: "Comienza siguiendo usuarios".
