@@ -1,0 +1,49 @@
+# Resultados de Pruebas de API - ProyectoFinal Yuli Riveros
+
+## Ambiente de prueba
+- Herramienta: Postman
+- Base URL: https://fakestoreapi.com/
+- Fecha de ejecución: Noviembre 2025
+
+## Casos de prueba ejecutados
+
+1️ **API-01 - GET /products**
+   - Resultado esperado: Código 200 y lista de productos
+   - Resultado obtenido: Código 200 OK, body con 20 productos
+   - Estado: ✅ PASS
+
+2️**API-02 - GET /products/1**
+   - Resultado esperado: Código 200 con objeto producto (id, title, price, description, category, image)
+   - Resultado obtenido: Código 200 OK con objeto válido
+   - Estado: ✅ PASS
+
+3️ **API-03 - POST /products**
+   - Resultado esperado: Código 201 Created, body con producto nuevo y ID generado
+   - Resultado obtenido: Código 201 Created, id:21
+   - Estado: ✅ PASS
+
+4️ **API-04 - PUT /products/1**
+   - Resultado esperado: Código 200 OK, body con producto actualizado
+   - Resultado obtenido: Código 200 OK, producto id:1 actualizado correctamente
+   - Estado: ✅ PASS
+
+5 **API-05 - GET /products/9999 (Negativo)**
+   - Resultado esperado: Código 404 o body vacío
+   - Resultado obtenido: Código 200 con body vacío (producto inexistente)
+   - Estado: ⚠️ PASS con observación
+
+6️ **API-06 - Validación de estructura JSON**
+   - Validación: Verificar que el objeto producto contenga las claves esperadas (id, title, price, description, category, image)
+   - Resultado: Estructura completa y válida
+   - Estado: ✅ PASS
+
+## Conclusión
+Todos los endpoints respondieron correctamente.  
+No se detectaron errores críticos, pero se recomienda que el endpoint GET /products/9999 devuelva **404 Not Found** en lugar de 200 con body vacío para mayor precisión.
+
+---
+
+## Recomendaciones
+- Implementar validación de error 404 para recursos inexistentes.
+- Estandarizar códigos de respuesta HTTP según buenas prácticas REST.
+- Agregar pruebas automatizadas con Postman o Cypress para CI/CD.
