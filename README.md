@@ -1,4 +1,5 @@
-🧪 Proyecto Final – QA Manual & API Testing
+📱 Proyecto Final QA - Instagram Lite
+💼 **Proyecto de Portfolio** - Testing Manual y API
 
 Autora: Yuli Riveros
 
@@ -83,3 +84,14 @@ README.md                  → Descripción general del proyecto
 
 Este proyecto me permitió aplicar habilidades en análisis funcional, documentación, gestión de defectos y comunicación de resultados, dentro de una dinámica de trabajo ágil simulada por sprints.
 Refleja mi enfoque como QA: detallista, organizada y orientada a resultados medibles.
+
+## 📞 Contacto
+
+**Yuli Riveros** - QA Tester  
+📧 Email: tu-email@gmail.com  
+💼 LinkedIn: [(https://www.linkedin.com/in/yuliriverosortiz-front-qa/)]  
+🐙 GitHub: [@dojayuli]((https://github.com/dojayuli))
+
+---
+
+⭐ Si te gustó este proyecto, dale una estrella en GitHub
